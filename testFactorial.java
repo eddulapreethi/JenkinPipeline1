@@ -1,6 +1,9 @@
 public class testFactorial {
     public static void main(String[] args) {
         try {
+            if(Factorial.compute(7) != 5040) {
+                throw new AssertionError("Test Failed for input 7");
+            }
             if(Factorial.compute(5) != 120) {
                 throw new AssertionError("Test Failed for input 5");
             }
